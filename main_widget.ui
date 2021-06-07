@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1117</width>
+    <width>530</width>
     <height>683</height>
    </rect>
   </property>
@@ -48,7 +48,7 @@
         </font>
        </property>
        <property name="text">
-        <string>TextLabel</string>
+        <string/>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -87,7 +87,7 @@
         </font>
        </property>
        <property name="text">
-        <string>TextLabel</string>
+        <string/>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -95,9 +95,6 @@
       </widget>
      </item>
     </layout>
-   </item>
-   <item>
-    <layout class="QVBoxLayout" name="pdf_layout"/>
    </item>
   </layout>
  </widget>
