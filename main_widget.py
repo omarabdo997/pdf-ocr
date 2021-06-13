@@ -2,6 +2,7 @@ from PySide2.QtWidgets import QWidget, QFileDialog
 from PySide2.QtGui import QWindow
 from PySide2.QtCore import Qt
 from PySide2.QtUiTools import QUiLoader
+from controller import controller
 import subprocess
 
 
@@ -53,8 +54,9 @@ class MainWidget(QWidget):
         self._ui.export_label.setText("PDF file saved successfully!")
         self._color_label(self._ui.export_label, "blue")
         self._ui.export_button.setDisabled(True)
-        self._exported_pdf = pdf_path
-        self._load_pdf("/home/omar/Downloads/Mancala.pdf")
+        self._exported_pdf = pdf_path + ".pdf"
+        controller(self._imported_pdf, self._exported_pdf)
+        self._load_pdf(self._exported_pdf)
     
     def show(self):
         self._ui.show()
