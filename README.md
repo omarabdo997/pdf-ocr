@@ -34,7 +34,7 @@ sudo apt-get install -y ghostscript-x
 
 and then install tesseract using the following command:
 ```bash
-apt-get install tesseract-ocr
+sudo apt-get install tesseract-ocr
 ```
 
 to run the project after installing the dependecies in the activated enviroment go to the project directory where the main.py file is located and run:
